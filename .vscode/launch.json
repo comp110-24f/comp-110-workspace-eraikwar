@@ -2,12 +2,34 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },
+
         {
             "name": "Start Trailhead in Debug Mode",
             "type": "python",
             "request": "launch",
             "module": "trailhead",
             "justMyCode": true
+        },
+
+        {
+            "name": "Python: Debug Console",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "internalConsole"
         }
     ]
 }
