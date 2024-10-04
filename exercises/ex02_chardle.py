@@ -43,8 +43,12 @@ def contains_char(
     if letter == word[4]:
         print(letter + " found at index 4")
         count += 1  # keeping track of instances
-    if count > 0:  # final print statement - if instances of letter found in word
+    if (
+        count > 0 and count != 1
+    ):  # final print statement - if instances of letter found in word
         print(str(count) + " instances of " + letter + " found in " + word)
+    elif count == 1:  # if 1 instancE of letter is found in word
+        print(str(count) + " instance of " + letter + " found in " + word)
     else:
         print(
             "No instances of " + letter + " found in " + word
