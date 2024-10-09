@@ -26,7 +26,7 @@ def contains_char(secret_word: str, char_guess: str) -> bool:
     return False
 
 
-def emojified(guess: str, secret: str):
+def emojified(guess: str, secret: str) -> str:
     """Give emojis like in Wordle to identify which characters belong in the word, which are in the correct place, and which don't belong at all."""
     assert len(guess) == len(
         secret
