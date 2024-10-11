@@ -43,7 +43,3 @@ def extend(int_list1: list[int], int_list2: list[int]) -> None:
     """Add the second list's values to the first list."""
     for nums in int_list2:  # goes through each value in second list
         int_list1.append(nums)  # adds values from second list to first list
-
-
-def main() -> None:
-    print(all([1, 2, 2], 2))
