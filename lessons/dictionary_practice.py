@@ -1,4 +1,4 @@
-"""Splitting a dictionary into two lists"""
+"""Splitting a dictionary into two lists."""
 
 __author__ = "730768796"
 
@@ -8,8 +8,8 @@ def get_keys(input_dict: dict[str, int]) -> list[str]:
     if len(input_dict) == 0:  # return empty list if empty dictionary
         return []
     keys_list: list[str] = []  # initialize keys_list to empty list
-    for values in input_dict:
-        keys_list.append(values)  # add keys in input_dict to keys_list
+    for keys in input_dict:
+        keys_list.append(keys)  # add keys in input_dict to keys_list
     return keys_list
 
 
